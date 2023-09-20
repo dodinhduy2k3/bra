@@ -18,6 +18,8 @@ app.set('view engine', 'pug')
 
 const router = require('./router/client/index.router');
 router(app)
+
+app.use(express.static("public"))
 // // products
 
 const database = require("./config/database.js")
